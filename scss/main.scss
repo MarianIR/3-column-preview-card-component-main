@@ -1,0 +1,102 @@
+@import "variables", "reset", "mixins";
+body {
+  background-color: #fff;
+}
+.main-section {
+  width: 90%;
+  max-width: 30rem;
+  margin: 2rem auto;
+
+  @media (min-width: 1024px) {
+    margin-top: 15rem;
+    display: flex;
+    flex-direction: row;
+    max-width: 80rem;
+  }
+
+  .sedans {
+    @include content;
+    background-color: $primaryColor1;
+    border-radius: 1rem 1rem 0 0;
+
+    @media (min-width: 1024px) {
+      border-radius: 1rem 0 0 1rem;
+    }
+    .type-of-car {
+      @include images;
+    }
+    .header {
+      @include headers;
+    }
+    .paragraph {
+      @include paragraphs;
+    }
+    .learn-more-btn {
+      @include btns;
+      color: $primaryColor1;
+      &:hover {
+        @include hover-btn;
+        background-color: $primaryColor1;
+      }
+    }
+  }
+  .suvs {
+    @include content;
+    background-color: $primaryColor2;
+    .type-of-car {
+      @include images;
+    }
+    .header {
+      @include headers;
+    }
+    .paragraph {
+      @include paragraphs;
+    }
+    .learn-more-btn {
+      @include btns;
+      color: $primaryColor2;
+      &:hover {
+        @include hover-btn;
+        background-color: $primaryColor2;
+      }
+    }
+  }
+  .luxury {
+    @include content;
+    background-color: $primaryColor3;
+    border-radius: 0 0 1rem 1rem;
+
+    @media (min-width: 1024px) {
+      border-radius: 0 1rem 1rem 0;
+    }
+    .type-of-car {
+      @include images;
+    }
+    .header {
+      @include headers;
+    }
+    .paragraph {
+      @include paragraphs;
+    }
+    .learn-more-btn {
+      @include btns;
+      color: $primaryColor3;
+      &:hover {
+        @include hover-btn;
+        background-color: $primaryColor3;
+      }
+    }
+  }
+}
+
+.attribution {
+  margin: 5rem auto;
+  text-align: center;
+  font-size: 1.5rem;
+  a {
+    text-decoration: none;
+    cursor: pointer;
+    color: $primaryColor1;
+    transition: 0.3s;
+  }
+}

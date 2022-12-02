@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Big Shoulders Display", cursive, sans-serif;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 10px;
+}
+
+body {
+  background-color: #fff;
+}
+
+.main-section {
+  width: 90%;
+  max-width: 30rem;
+  margin: 2rem auto;
+}
+@media (min-width: 1024px) {
+  .main-section {
+    margin-top: 15rem;
+    display: flex;
+    flex-direction: row;
+    max-width: 80rem;
+  }
+}
+.main-section .sedans {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 90%;
+  height: 40rem;
+  margin: 0 auto;
+  background-color: hsl(31deg, 77%, 52%);
+  border-radius: 1rem 1rem 0 0;
+}
+@media (min-width: 1024px) {
+  .main-section .sedans {
+    border-radius: 1rem 0 0 1rem;
+  }
+}
+.main-section .sedans .type-of-car {
+  margin: 2rem 2rem 1rem;
+  width: 4.5rem;
+  height: 3rem;
+}
+.main-section .sedans .header {
+  margin: 2rem;
+  color: hsl(0deg, 0%, 95%);
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", cursive, sans-serif;
+  letter-spacing: 0.2rem;
+}
+.main-section .sedans .paragraph {
+  margin: 0 2rem 2rem;
+  color: hsla(0deg, 0%, 100%, 0.75);
+  font-size: 1.5rem;
+}
+.main-section .sedans .learn-more-btn {
+  border: 0.2rem solid transparent;
+  border-radius: 5rem;
+  background-color: #fff;
+  padding: 1rem 2.5rem;
+  margin: 1rem 2rem 3rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: hsl(31deg, 77%, 52%);
+}
+.main-section .sedans .learn-more-btn:hover {
+  border: 0.2rem solid #fff;
+  color: #fff;
+  transition: 0.4s;
+  cursor: pointer;
+  background-color: hsl(31deg, 77%, 52%);
+}
+.main-section .suvs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 90%;
+  height: 40rem;
+  margin: 0 auto;
+  background-color: hsl(184deg, 100%, 22%);
+}
+.main-section .suvs .type-of-car {
+  margin: 2rem 2rem 1rem;
+  width: 4.5rem;
+  height: 3rem;
+}
+.main-section .suvs .header {
+  margin: 2rem;
+  color: hsl(0deg, 0%, 95%);
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", cursive, sans-serif;
+  letter-spacing: 0.2rem;
+}
+.main-section .suvs .paragraph {
+  margin: 0 2rem 2rem;
+  color: hsla(0deg, 0%, 100%, 0.75);
+  font-size: 1.5rem;
+}
+.main-section .suvs .learn-more-btn {
+  border: 0.2rem solid transparent;
+  border-radius: 5rem;
+  background-color: #fff;
+  padding: 1rem 2.5rem;
+  margin: 1rem 2rem 3rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: hsl(184deg, 100%, 22%);
+}
+.main-section .suvs .learn-more-btn:hover {
+  border: 0.2rem solid #fff;
+  color: #fff;
+  transition: 0.4s;
+  cursor: pointer;
+  background-color: hsl(184deg, 100%, 22%);
+}
+.main-section .luxury {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 90%;
+  height: 40rem;
+  margin: 0 auto;
+  background-color: hsl(179deg, 100%, 13%);
+  border-radius: 0 0 1rem 1rem;
+}
+@media (min-width: 1024px) {
+  .main-section .luxury {
+    border-radius: 0 1rem 1rem 0;
+  }
+}
+.main-section .luxury .type-of-car {
+  margin: 2rem 2rem 1rem;
+  width: 4.5rem;
+  height: 3rem;
+}
+.main-section .luxury .header {
+  margin: 2rem;
+  color: hsl(0deg, 0%, 95%);
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", cursive, sans-serif;
+  letter-spacing: 0.2rem;
+}
+.main-section .luxury .paragraph {
+  margin: 0 2rem 2rem;
+  color: hsla(0deg, 0%, 100%, 0.75);
+  font-size: 1.5rem;
+}
+.main-section .luxury .learn-more-btn {
+  border: 0.2rem solid transparent;
+  border-radius: 5rem;
+  background-color: #fff;
+  padding: 1rem 2.5rem;
+  margin: 1rem 2rem 3rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: hsl(179deg, 100%, 13%);
+}
+.main-section .luxury .learn-more-btn:hover {
+  border: 0.2rem solid #fff;
+  color: #fff;
+  transition: 0.4s;
+  cursor: pointer;
+  background-color: hsl(179deg, 100%, 13%);
+}
+
+.attribution {
+  margin: 5rem auto;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.attribution a {
+  text-decoration: none;
+  cursor: pointer;
+  color: hsl(31deg, 77%, 52%);
+  transition: 0.3s;
+}/*# sourceMappingURL=main.css.map */
